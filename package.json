@@ -21,5 +21,8 @@
 	"dependencies": {
 		"carbon-components-svelte": "^0.86.1",
 		"carbon-icons-svelte": "^12.13.0"
+	},
+	"engines": {
+		"node": ">=18 <21"
 	}
 }
