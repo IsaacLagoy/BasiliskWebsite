@@ -3,26 +3,36 @@
     import 'carbon-components-svelte/css/g90.css';
     import {
         Header,
-        HeaderGlobalAction,
-        HeaderUtilities,
         HeaderNav,
         HeaderNavItem,
-        HeaderNavMenu,
+        SideNav,
+        SideNavLink,
+        SideNavItems,
         Content,
-        Grid
+        Grid,
     } from 'carbon-components-svelte';
-    import {
-        Document,
-        Code
-    } from 'carbon-icons-svelte';
+
+    let isSideNavOpen = false;
 </script>
 
-<Header platformName='Basilisk Engine' href='/' style='margin-bottom:0px;'>
+<Header
+  persistentHamburgerMenu={true}
+  platformName='Basilisk Engine'
+  href='/'
+  bind:isSideNavOpen
+>
     <HeaderNav>
         <HeaderNavItem href='/docs' text='Docs'/>
-        <HeaderNavItem href='/how' text='How it Works' />
+        <HeaderNavItem href='/how' text='How it Works'/>
     </HeaderNav>
 </Header>
+
+<SideNav bind:isOpen={isSideNavOpen}>
+    <SideNavItems>
+        <SideNavLink href='/docs' text='Docs'/>
+        <SideNavLink href='/how' text='How it Works'/>
+    </SideNavItems>
+</SideNav>
 
 <Content style='padding-top:0px; padding-bottom:0px;'>
     <div class='page-center'>
@@ -31,13 +41,3 @@
         </Grid>
     </div>
 </Content>
-
-<style>
-    div.page-center {
-        background-color: #393939;
-        min-height: 100vh;
-        width: min(100vh, 90vw);
-        margin: auto;
-        margin-top: 0px;
-    }
-</style>

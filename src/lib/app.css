@@ -1,0 +1,7 @@
+div.page-center {
+    background-color: #393939;
+    min-height: 100vh;
+    width: min(100vh, 90vw);
+    margin: auto;
+    margin-top: 0px;
+}

@@ -1,22 +1,33 @@
 <script lang='ts'>
     import {
+        Header,
+        HeaderNav,
+        HeaderNavItem,
         SideNav,
         SideNavItems,
-        SideNavMenu,
-        SideNavMenuItem
+        SideNavLink,
     } from 'carbon-components-svelte';
 
-    let isSideBarOpen = true;
+    let isSideNavOpen = true;
 </script>
 
-<SideNav bind:isOpen={isSideBarOpen}>
+<Header
+  platformName='Basilisk Engine'
+  href='/'
+  bind:isSideNavOpen
+>
+    <HeaderNav>
+        <HeaderNavItem href='/docs' text='Docs'/>
+        <HeaderNavItem href='/how' text='How it Works' />
+    </HeaderNav>
+</Header>
+
+<SideNav bind:isOpen={isSideNavOpen}>
     <SideNavItems>
-      <SideNavMenu text="Menu">
-        <SideNavMenuItem href="/" text="Link 1" />
-        <SideNavMenuItem href="/" text="Link 2" />
-        <SideNavMenuItem href="/" text="Link 3" />
-      </SideNavMenu>
+        <SideNavLink text="Link 1" />
+        <SideNavLink text="Link 2" />
+        <SideNavLink text="Link 3" />
     </SideNavItems>
-  </SideNav>
+</SideNav>
 
 <slot />

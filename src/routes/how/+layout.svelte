@@ -1,13 +1,34 @@
 <script lang='ts'>
     import {
+        Header,
+        HeaderNav,
+        HeaderNavItem,
         SideNav,
         SideNavItems,
         SideNavMenu,
-        SideNavMenuItem
+        SideNavMenuItem,
     } from 'carbon-components-svelte';
+
+    let isSideNavOpen = true;
+
+    const toggleSideNav = () => {
+        isSideNavOpen = !isSideNavOpen;
+    };
 </script>
 
-<SideNav isOpen fixed>
+<Header
+  platformName='Basilisk Engine'
+  href='/'
+  bind:isSideNavOpen
+>
+    
+    <HeaderNav>
+        <HeaderNavItem href='/docs' text='Docs'/>
+        <HeaderNavItem href='/how' text='How it Works' />
+    </HeaderNav>
+</Header>
+
+<SideNav bind:isOpen={isSideNavOpen}>
     <SideNavItems>
         <SideNavMenu text="Physics Pipeline">
             <SideNavMenuItem text="Movement" />
@@ -19,7 +40,7 @@
             <SideNavMenuItem text="What's a shader" />
             <SideNavMenuItem text="graphics guy" />
         </SideNavMenu>
-        </SideNavItems>
-  </SideNav>
+    </SideNavItems>
+</SideNav>
 
 <slot />
