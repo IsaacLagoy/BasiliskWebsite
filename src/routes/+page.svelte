@@ -14,8 +14,6 @@
 
 <Row>
     <Column>
-        <Tile>
-            <p>I love Basilisk Engine</p>
-        </Tile>
+        <p>I love Basilisk Engine</p>
     </Column>
 </Row>
