@@ -1,7 +1,8 @@
 <script lang='ts'>
     import {
     Row,
-    Column
+    Column,
+    Tile
 } from 'carbon-components-svelte';
 </script>
 
@@ -13,6 +14,8 @@
 
 <Row>
     <Column>
-        <p>I love Basilisk Engine</p>
+        <Tile>
+            <p>I love Basilisk Engine</p>
+        </Tile>
     </Column>
 </Row>
