@@ -1,8 +1,5 @@
 <script lang='ts'>
     import {
-        Header,
-        HeaderNav,
-        HeaderNavItem,
         SideNav,
         SideNavItems,
         SideNavLink,
@@ -10,17 +7,6 @@
 
     let isSideNavOpen = true;
 </script>
-
-<Header
-  platformName='Basilisk Engine'
-  href='/'
-  bind:isSideNavOpen
->
-    <HeaderNav>
-        <HeaderNavItem href='/docs' text='Docs'/>
-        <HeaderNavItem href='/how' text='How it Works' />
-    </HeaderNav>
-</Header>
 
 <SideNav bind:isOpen={isSideNavOpen}>
     <SideNavItems>

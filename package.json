@@ -20,6 +20,7 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-vercel": "^5.4.8",
-		"carbon-components-svelte": "^0.86.1"
+		"carbon-components-svelte": "^0.86.1",
+		"carbon-icons-svelte": "^12.13.0"
 	}
 }
