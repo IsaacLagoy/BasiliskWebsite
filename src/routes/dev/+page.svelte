@@ -31,6 +31,9 @@
                             <p>IL</p>
                         </div>
                     </div>
+                    <div class='right' style='margin-right:10vh;'>
+                        <p>{log.date}</p>
+                    </div>
                 {:else}
                     <div class='log left'>
                         <div class='icon'>
@@ -42,6 +45,9 @@
                                 <p>{log.description}</p>
                             </div>
                         </div>
+                    </div>
+                    <div class='left' style='margin-left:10vh;'>
+                        <p>{log.date}</p>
                     </div>
                 {/if}
             </a>
