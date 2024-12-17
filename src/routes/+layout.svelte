@@ -85,12 +85,7 @@
     <defs>
         <linearGradient id='rainbowGradient' x1='0%' y1='0%' x2='100%' y2='0%'>
             <stop offset='0%' stop-color='blue' />
-            <stop offset='15%' stop-color='green' />
-            <stop offset='45%' stop-color='yellow' />
-            <stop offset='60%' stop-color='orange' />
-            <stop offset='75%' stop-color='red' />
-            <stop offset='90%' stop-color='gray' />
-            <stop offset='100%' stop-color='gray' />
+            <stop offset='100%' stop-color='green' />
         </linearGradient>
     </defs>
     <path d={wavePath} fill='none' stroke='url(#rainbowGradient)' stroke-width='5' />
@@ -100,7 +95,7 @@
         width='8'
         height='5'
         rx='2.5' 
-        fill='gray'
+        fill='green'
     />
     <circle
         cx={headPosition.x + 0.5} 
