@@ -58,7 +58,7 @@
     <HeaderNav>
         <HeaderNavItem href='/docs' text='Docs'/>
         <!-- <HeaderNavItem href='/how' text='How it Works'/> -->
-        <HeaderNavItem href='dev' text='Dev Logs'/>
+        <HeaderNavItem href='/dev' text='Dev Logs'/>
     </HeaderNav>
     <HeaderUtilities>
         <HeaderGlobalAction

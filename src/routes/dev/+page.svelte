@@ -114,8 +114,13 @@
         border: var(--bubble-border-hover) solid 3px;
     }
 
-    .bubble:hover::after {
+    .right .bubble:hover::after {
         border-left: 10px solid var(--bubble-border-hover);
+        border-top: 1vh solid var(--bubble-border-hover);
+    }
+
+    .left .bubble:hover::after {
+        border-right: 10px solid var(--bubble-border-hover);
         border-top: 1vh solid var(--bubble-border-hover);
     }
 
