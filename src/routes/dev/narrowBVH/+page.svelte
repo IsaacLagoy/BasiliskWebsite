@@ -60,8 +60,8 @@
             <StructuredListBody>
                 <StructuredListRow>
                     <StructuredListCell>Vertex</StructuredListCell>
-                    <StructuredListCell>2%</StructuredListCell>
-                    <StructuredListCell>20%</StructuredListCell>
+                    <StructuredListCell>-30%</StructuredListCell>
+                    <StructuredListCell>1090%</StructuredListCell>
                 </StructuredListRow>
                 <StructuredListRow>
                     <StructuredListCell>Triangle</StructuredListCell>

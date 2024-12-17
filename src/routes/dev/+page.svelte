@@ -21,34 +21,40 @@
             <a href={`/dev/${log.href}`} style='text-decoration:none; color:white;'>
                 {#if log.contributor === 'Isaac Lagoy'}
                     <div class='log right'>
-                        <div class='bubble'>
-                            <div class='content'>
-                                <h2>{log.title}</h2>
-                                <p>{log.description}</p>
+                        <div>
+                            <div class='bubble'>
+                                <div class='content'>
+                                    <h2>{log.title}</h2>
+                                    <p>{log.description}</p>
+                                </div>
+                            </div>
+                            <div class='right' style='margin-right:10vh;'>
+                                <p>{log.date}</p>
                             </div>
                         </div>
                         <div class='icon'>
                             <p>IL</p>
                         </div>
                     </div>
-                    <div class='right' style='margin-right:10vh;'>
-                        <p>{log.date}</p>
-                    </div>
+                    
                 {:else}
                     <div class='log left'>
                         <div class='icon'>
                             <p>JC</p>
                         </div>
-                        <div class='bubble'>
-                            <div class='content'>
-                                <h2>{log.title}</h2>
-                                <p>{log.description}</p>
+                        <div>
+                            <div class='bubble'>
+                                <div class='content'>
+                                    <h2>{log.title}</h2>
+                                    <p>{log.description}</p>
+                                </div>
+                            </div>
+                            <div class='left' style='margin-left:10vh;'>
+                                <p>{log.date}</p>
                             </div>
                         </div>
                     </div>
-                    <div class='left' style='margin-left:10vh;'>
-                        <p>{log.date}</p>
-                    </div>
+                    
                 {/if}
             </a>
         </Column>
