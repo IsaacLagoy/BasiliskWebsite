@@ -9,8 +9,8 @@
         StructuredListBody,
     } from 'carbon-components-svelte';
 
-    import l2 from '$lib/images/devlogs/broad_bvh/L2.png';
-    import l9 from '$lib/images/devlogs/broad_bvh/L9.png';
+    import l2 from '$lib/images/devlogs/narrow_bvh/L2.png';
+    import l9 from '$lib/images/devlogs/narrow_bvh/L9.png';
 </script>
 
 <Row>
