@@ -43,14 +43,17 @@
     </div>
 </div>
 
-
-<Grid noGutter>
-    <slot />
-</Grid>
+<slot />
 
 <style>
     .top-nav {
-        background-color: rgba(142, 142, 142, 0.3);
+        background-color: rgba(142, 142, 142, 0.8);
+        backdrop-filter: blur(10px);
+        backdrop-filter: blur(100px);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
 
     .top-nav-ui {
