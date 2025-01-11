@@ -47,13 +47,11 @@
 
 <style>
     .top-nav {
-        background-color: rgba(142, 142, 142, 0.8);
-        backdrop-filter: blur(10px);
-        backdrop-filter: blur(100px);
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
+        background-color: rgba(134,144,154,.15);
+        -webkit-backdrop-filter: blur(40px);
+        backdrop-filter: blur(40px);
+        margin-bottom: -70px;
+        z-index: 2;
     }
 
     .top-nav-ui {

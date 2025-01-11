@@ -16,6 +16,10 @@
     import basilisk_white from '$lib/images/basilisk_white.svg'
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 <div class="banner">
     <img src={banner} alt="Banner" class="banner-img">
     <div class="banner-content">
@@ -23,7 +27,7 @@
             3D Made Easy
         </h1>
         <div class="pip-snippet">
-            
+            <p class="pip-snippet-text"><span style="color: #7E52A0">pip</span> install <span style="color: #D295BF">basilisk-engine</span></p>
         </div>
     </div>
 </div>
