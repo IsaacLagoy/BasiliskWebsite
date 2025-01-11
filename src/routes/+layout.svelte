@@ -54,7 +54,10 @@
         background-color: rgba(134,144,154,.15);
         -webkit-backdrop-filter: blur(40px);
         backdrop-filter: blur(40px);
-        margin-bottom: -70px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
         z-index: 2;
     }
 
@@ -69,7 +72,8 @@
     .nav-box {
         display: table;
         height: 100%;
-        width: 12vw;
+        padding-left: 30px;
+        padding-right: 30px;
         text-align: center;
     }
 
@@ -79,7 +83,7 @@
     }
 
     .nav-box:hover {
-        background-color: rgba(170, 170, 170, 0.6);
+        background-color: rgba(239, 239, 239, 0.1);
     }
 
     a {
@@ -108,6 +112,6 @@
     }
 
     .basilisk-container:hover {
-        background-color: rgba(170, 170, 170, 0.6);
+        background-color: rgba(239, 239, 239, 0.1);
     }
 </style>
