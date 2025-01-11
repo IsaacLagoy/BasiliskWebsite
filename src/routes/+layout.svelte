@@ -44,9 +44,7 @@
 </div>
 
 
-<Grid noGutter>
-    <slot />
-</Grid>
+<slot />
 
 <style>
     .top-nav {
