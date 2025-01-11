@@ -1,4 +1,11 @@
-
+:root {
+    --dark-blue: #222D30;
+    --medium-blue: #2A3538;
+    --dark-purple: #29274C;
+    --light-purple: #7E52A0;
+    --pink: #D295BF;
+    --white: #EDEDED;
+}
 
 div.page-center {
     background-color: #222D30;
