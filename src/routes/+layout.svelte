@@ -14,41 +14,6 @@
         LogoGithub,
         LogoYoutube
     } from 'carbon-icons-svelte';
-    import { onMount } from 'svelte';
-    let wavePath = '';
-    let headPosition = { x: 0, y: 50 };
-    let waveOffset = 0;
-
-    // snake
-    const generateWavePath = (amplitude: number, frequency: number, phase: number) => {
-        let path = '';
-        const width = 95; // SVG width in percentage
-        for (let x = 0; x <= width; x++) {
-        const y = 50 + amplitude * Math.sin((frequency * x + phase) * Math.PI / 180);
-        if (x === 0) {
-            path += `M ${x},${y} `;
-            
-        } else if (x === width){
-            headPosition = {x: x + 1, y}; 
-            path += `L ${x},${y} `; 
-        }else {
-            path += `L ${x},${y} `; 
-        }
-        }
-        return path;
-    };
-
-    // animate
-    const updateWave = () => {
-        waveOffset = (waveOffset + 2) % 360; 
-        wavePath = generateWavePath(10, 15, waveOffset); 
-        requestAnimationFrame(updateWave); 
-    };
-
-    // start
-    onMount(() => {
-        updateWave(); 
-    });
 </script>
 
 <Header
@@ -76,35 +41,6 @@
     </HeaderUtilities>
 </Header>
 
-<svg
-    width='100%'
-    height='100%'
-    viewBox='0 0 100 80'
-    preserveAspectRatio='xMidYMid meet'
->
-    <defs>
-        <linearGradient id='rainbowGradient' x1='0%' y1='0%' x2='100%' y2='0%'>
-            <stop offset='0%' stop-color='blue' />
-            <stop offset='100%' stop-color='green' />
-        </linearGradient>
-    </defs>
-    <path d={wavePath} fill='none' stroke='url(#rainbowGradient)' stroke-width='5' />
-    <rect
-        x={headPosition.x - 3}  
-        y={headPosition.y - 2.5}
-        width='8'
-        height='5'
-        rx='2.5' 
-        fill='green'
-    />
-    <circle
-        cx={headPosition.x + 0.5} 
-        cy={headPosition.y - 0.5} 
-        r='1'
-        fill='black'
-    />
-</svg>
-
 <Content style='padding-top:0px; padding-bottom:0px;'>
 
     <div class='page-center'>
@@ -113,18 +49,3 @@
         </Grid>
     </div>
 </Content>
-
-<style>
-    svg {
-        /* background: linear-gradient(to bottom, #f0f8ff, #e0f7fa); */
-        position: fixed; 
-        top: 0; 
-        left: 0; 
-        z-index: -1; 
-        overflow: hidden;
-    }
-
-    path {
-        stroke-linecap: round;
-    }
-</style>
