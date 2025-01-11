@@ -14,11 +14,15 @@
         LogoGithub,
         LogoYoutube
     } from 'carbon-icons-svelte';
+    import basilisk from '$lib/images/basilisk_white.svg';
 </script>
 
 <div class='top-nav'>
     <div class='top-nav-ui'>
         <div class='left'>
+            <div class='basilisk-container'>
+                <img src={basilisk} alt='Basilisk Engine Logo' class='basilisk-logo'/>
+            </div>
             <a href='/'>
                 <div class='nav-box'>
                     <p>Features</p>
@@ -59,17 +63,23 @@
         display: flex;
         height: 50px;
         justify-content: space-between;
-        justify-self: center;
+        margin: auto;
     }
 
     .nav-box {
+        display: table;
         height: 100%;
-        width: 100%;
-        width: flex;
+        width: 12vw;
+        text-align: center;
+    }
+
+    .nav-box p {
+        display: table-cell;
+        vertical-align: middle;
     }
 
     .nav-box:hover {
-        background-color: rgba(170, 170, 170, 0.3);
+        background-color: rgba(170, 170, 170, 0.6);
     }
 
     a {
@@ -84,5 +94,20 @@
 
     .docs {
         justify-self: right;
+    }
+
+    .basilisk-logo {
+        aspect-ratio: 1;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .basilisk-container {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .basilisk-container:hover {
+        background-color: rgba(170, 170, 170, 0.6);
     }
 </style>
