@@ -43,10 +43,6 @@
     </div>
 </div>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b0b2a9fe0db58da5a7536ec8a426b836b952ff28
 <slot />
 
 <style>
