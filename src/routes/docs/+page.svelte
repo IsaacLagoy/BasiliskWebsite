@@ -5,15 +5,29 @@
     } from 'carbon-components-svelte';
 </script>
 
+<div style='width:100%; background-color: red; height: 100vh;'>
+    
+</div>
+
 <Row>
-    <Column>
+    <div class='side-bar'>
+        <Column>
+        
+        </Column>
+    </div>
+    <div class='doc-page'>
+        <Column>
 
-    </Column>
-    <Column>
-
-    </Column>
+        </Column>
+    </div>
+    
 </Row>
 
 <style>
+    .side-bar {
+        background-color: var(--daek);
+    }
+    .doc-page {
 
+    }
 </style>
