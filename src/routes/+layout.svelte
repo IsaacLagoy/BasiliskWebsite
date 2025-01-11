@@ -21,7 +21,9 @@
     <div class='top-nav-ui'>
         <div class='left'>
             <div class='basilisk-container'>
-                <img src={basilisk} alt='Basilisk Engine Logo' class='basilisk-logo'/>
+                <a href='/'>
+                    <img src={basilisk} alt='Basilisk Engine Logo' class='basilisk-logo'/>
+                </a>
             </div>
             <a href='/'>
                 <div class='nav-box'>

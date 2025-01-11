@@ -8,12 +8,11 @@
 }
 
 div.page-center {
-    background-color: #222D30;
     min-height: 100vh;
     width: 70%;
     margin: auto;
-    margin-top: 0px;
-    font-family: "Oswald", serif;
+    padding-top: 50px;
+
 }
 
 .center {
