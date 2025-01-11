@@ -43,7 +43,7 @@
 
 <Content style='padding-top:0px; padding-bottom:0px;'>
 
-    <div class='page-center'>
+    <div>
         <Grid padding>
             <slot />
         </Grid>

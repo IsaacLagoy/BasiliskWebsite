@@ -8,12 +8,4 @@
     let isSideNavOpen = true;
 </script>
 
-<SideNav bind:isOpen={isSideNavOpen}>
-    <SideNavItems>
-        <SideNavLink text="Link 1" />
-        <SideNavLink text="Link 2" />
-        <SideNavLink text="Link 3" />
-    </SideNavItems>
-</SideNav>
-
 <slot />
