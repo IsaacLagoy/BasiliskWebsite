@@ -24,18 +24,18 @@
                     <p>Features</p>
                 </div>
             </a>
-            <a href='/'>
+            <a href='/dev'>
                 <div class='nav-box'>
                     <p>Blog</p>
                 </div>
             </a>
-            <a href='/'>
+            <a href='/how'>
                 <div class='nav-box'>
                     <p>How it Works</p>
                 </div>
             </a>
         </div>
-        <a href='/'>
+        <a href='/docs'>
             <div class='nav-box docs'>
                 <p>Docs</p>
             </div>
@@ -43,12 +43,21 @@
     </div>
 </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b0b2a9fe0db58da5a7536ec8a426b836b952ff28
 <slot />
 
 <style>
     .top-nav {
-        background-color: rgba(142, 142, 142, 0.3);
+        background-color: rgba(142, 142, 142, 0.8);
+        backdrop-filter: blur(10px);
+        backdrop-filter: blur(100px);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
 
     .top-nav-ui {
