@@ -3,11 +3,26 @@
         Row,
         Column
     } from 'carbon-components-svelte';
+
+    import SideBarMenu from '$lib/SideBarMenu.svelte';
 </script>
 
 <div class='page-center'>
     <div class='side-bar'>
-        <p>div</p>
+        <SideBarMenu
+            title = 'Getting Started'
+            links = {[
+                {title: 'Installings Basilisk', href: '/docs/installing'},
+                {title: 'Making Your First Scene', href: '/docs/firstScene'}
+            ]}
+        />
+        <SideBarMenu
+            title = 'Getting Started'
+            links = {[
+                {title: 'Installings Basilisk', href: '/docs/installing'},
+                {title: 'Making Your First Scene', href: '/docs/firstScene'}
+            ]}
+        />
     </div>
     <div class='doc-page'>
         <slot />
@@ -19,6 +34,9 @@
         background-color: var(--medium-blue);
         min-height: 100vh;
         width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     
     .doc-page {
@@ -28,6 +46,7 @@
         width: 75%;
     }
     .page-center {
+        position: relative;
         width: 70%;
         display: flex;
     }

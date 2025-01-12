@@ -2,15 +2,6 @@
     import '$lib/app.css'
     import 'carbon-components-svelte/css/g90.css';
     import {
-        Header,
-        HeaderNav,
-        HeaderNavItem,
-        HeaderGlobalAction,
-        HeaderUtilities,
-        Content,
-        Grid,
-    } from 'carbon-components-svelte';
-    import {
         LogoGithub,
         LogoYoutube
     } from 'carbon-icons-svelte';
@@ -77,6 +68,7 @@
         padding-left: 30px;
         padding-right: 30px;
         text-align: center;
+        white-space: nowrap;
     }
 
     .nav-box p {
