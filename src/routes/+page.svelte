@@ -12,6 +12,8 @@
     import spring_2024 from '$lib/images/tagd_spring_2024.png';
     import fall_2024 from '$lib/images/tagd_fall_2024.png';
     import banner from '$lib/images/banner.png';
+    import codeSample from '$lib/images/code-sample.png';
+    import foil from '$lib/images/foil.png';
     import basilisk_engine_white from '$lib/images/basilisk_engine_white.svg';
     import basilisk_white from '$lib/images/basilisk_white.svg'
 </script>
@@ -40,7 +42,7 @@
             </div>
             <div class="features-items">
                 <div class="feature-box">
-                    <img src={banner} alt="Banner" class="banner-img">
+                    <img src={foil} alt="Banner" class="banner-img">
                     <p>Physically based rendering</p>
                 </div>
                 <div class="feature-box">
@@ -48,7 +50,7 @@
                     <p>Buit-in physics</p>
                 </div>
                 <div class="feature-box">
-                    <img src={banner} alt="Banner" class="banner-img">
+                    <img src={codeSample} alt="Banner" class="banner-img">
                     <p>Quick to start</p>
                 </div>
             </div>
