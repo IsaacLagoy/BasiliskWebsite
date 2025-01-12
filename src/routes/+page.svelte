@@ -47,7 +47,7 @@
                 </div>
                 <div class="feature-box">
                     <img src={banner} alt="Banner" class="banner-img">
-                    <p>Buit-in physics</p>
+                    <p>Built-in physics</p>
                 </div>
                 <div class="feature-box">
                     <img src={codeSample} alt="Banner" class="banner-img">
