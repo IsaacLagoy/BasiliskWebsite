@@ -38,7 +38,7 @@
     <div class="body">
         <div class="features-container">
             <div class="features-title">
-                Build applications without hassel
+                Build applications without hassle
             </div>
             <div class="features-items">
                 <div class="feature-box">
