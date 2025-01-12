@@ -56,7 +56,7 @@
         background-color: rgba(134,144,154,.15);
         -webkit-backdrop-filter: blur(40px);
         backdrop-filter: blur(40px);
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 0;
         width: 100%;
@@ -66,7 +66,7 @@
     .top-nav-ui {
         width: 70%;
         display: flex;
-        height: 50px;
+        height: 60px;
         justify-content: space-between;
         margin: auto;
     }
@@ -82,6 +82,8 @@
     .nav-box p {
         display: table-cell;
         vertical-align: middle;
+        font-weight: 200;
+        font-size: large;
     }
 
     .nav-box:hover {

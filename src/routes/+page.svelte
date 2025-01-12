@@ -32,8 +32,28 @@
     </div>
 </div>
 
-<div class="body">
-
+<div class="body-container">
+    <div class="body">
+        <div class="features-container">
+            <div class="features-title">
+                Build applications without hassel
+            </div>
+            <div class="features-items">
+                <div class="feature-box">
+                    <img src={banner} alt="Banner" class="banner-img">
+                    <p>Physically based rendering</p>
+                </div>
+                <div class="feature-box">
+                    <img src={banner} alt="Banner" class="banner-img">
+                    <p>Buit-in physics</p>
+                </div>
+                <div class="feature-box">
+                    <img src={banner} alt="Banner" class="banner-img">
+                    <p>Quick to start</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
     
 <style>
