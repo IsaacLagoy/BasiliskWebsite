@@ -47,11 +47,11 @@
         background-color: rgba(134,144,154,.15);
         -webkit-backdrop-filter: blur(40px);
         backdrop-filter: blur(40px);
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 8;
     }
 
     .top-nav-ui {

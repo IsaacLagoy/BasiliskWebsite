@@ -1,9 +1,4 @@
 <script lang='ts'>
-    import {
-        Row,
-        Column
-    } from 'carbon-components-svelte';
-
     import SideBarMenu from '$lib/SideBarMenu.svelte';
 </script>
 
@@ -32,11 +27,12 @@
 <style>
     .side-bar {
         background-color: var(--medium-blue);
-        min-height: 100vh;
+        height: 100vh;
         width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        padding-top: 60px;
     }
     
     .doc-page {
@@ -45,6 +41,7 @@
         min-height: 100vh;
         width: 75%;
     }
+
     .page-center {
         position: relative;
         width: 70%;

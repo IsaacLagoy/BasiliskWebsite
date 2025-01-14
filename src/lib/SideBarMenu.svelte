@@ -72,7 +72,6 @@
     .menu-item {
         color: var(--white);
         padding-left: 20px;
-        height: 30px;
     }
 
     .chevron {
