@@ -44,9 +44,9 @@
 
 <style>
     .top-nav {
-        background-color: rgba(134,144,154,.15);
-        -webkit-backdrop-filter: blur(40px);
-        backdrop-filter: blur(40px);
+        background-color: rgba(134,144,154,0.15);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
         position: fixed;
         left: 0;
         top: 0;
@@ -56,8 +56,8 @@
 
     .top-nav-ui {
         width: 70%;
-        display: flex;
         height: 60px;
+        display: flex;
         justify-content: space-between;
         margin: auto;
     }
