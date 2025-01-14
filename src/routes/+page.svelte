@@ -55,7 +55,25 @@
                 </div>
             </div>
         </div>
+
+        <div class="news-container">
+            <div class="news-title">
+                Basilisk news
+            </div>
+            <div class="news-items">
+                <div class="big-news">
+                    
+                </div>
+                <div class="small-news">
+
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
+<div class="footer-container">
+    
 </div>
     
 <style>
