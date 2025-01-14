@@ -57,15 +57,39 @@
         </div>
 
         <div class="news-container">
-            <div class="news-title">
-                Basilisk news
-            </div>
+            <h1>Basilisk news</h1>
             <div class="news-items">
                 <div class="big-news">
-                    
+                    <img src={banner} alt="Banner" class="banner-img">
+                    <h1>This is big news</h1>
+                    <h2>1/14/25</h2>
+                    <p>We will describe what the news is here</p>
                 </div>
                 <div class="small-news">
-
+                    <div class="small-news-item">
+                        <img src={banner} alt="Banner" class="banner-img">
+                        <div class="small-news-info">
+                            <h1>This is small news</h1>
+                            <h2>1/14/25</h2>
+                            <p>We will describe what the news is here</p>
+                        </div>
+                    </div>
+                    <div class="small-news-item">
+                        <img src={banner} alt="Banner" class="banner-img">
+                        <div class="small-news-info">
+                            <h1>This is small news</h1>
+                            <h2>1/14/25</h2>
+                            <p>We will describe what the news is here</p>
+                        </div>
+                    </div>
+                    <div class="small-news-item">
+                        <img src={banner} alt="Banner" class="banner-img">
+                        <div class="small-news-info">
+                            <h1>This is small news</h1>
+                            <h2>1/14/25</h2>
+                            <p>We will describe what the news is here</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
