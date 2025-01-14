@@ -11,13 +11,6 @@
                 {title: 'Making Your First Scene', href: '/docs/firstScene'}
             ]}
         />
-        <SideBarMenu
-            title = 'Getting Started'
-            links = {[
-                {title: 'Installings Basilisk', href: '/docs/installing'},
-                {title: 'Making Your First Scene', href: '/docs/firstScene'}
-            ]}
-        />
     </div>
     <div class='doc-page'>
         <slot />

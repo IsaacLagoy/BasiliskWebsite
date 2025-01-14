@@ -9,7 +9,7 @@
     export let title: string
     export let links: {title: string, href: string}[]
 
-    const isOpen = writable(true);
+    const isOpen = writable(false);
     const buttonClass = derived(
         isOpen, $isOpen => ($isOpen ? 'purple-background' : '')
     )
@@ -59,10 +59,10 @@
     }
 
     .menu {
-        height: 25px;
         display: flex;
         color: var(--light-purple);
         width: 100%;
+        padding-top: 5px;
     }
 
     .purple-background {
@@ -85,5 +85,7 @@
 
     .item-title {
         padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }    
 </style>

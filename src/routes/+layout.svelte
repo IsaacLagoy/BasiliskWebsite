@@ -26,11 +26,11 @@
                     <p>Blog</p>
                 </div>
             </a>
-            <a href='/how'>
+            <!-- <a href='/how'>
                 <div class='nav-box'>
                     <p>How it Works</p>
                 </div>
-            </a>
+            </a> -->
         </div>
         <a href='/docs'>
             <div class='nav-box docs'>
