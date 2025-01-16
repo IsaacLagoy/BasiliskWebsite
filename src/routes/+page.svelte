@@ -37,9 +37,7 @@
 <div class="body-container">
     <div class="body">
         <div class="features-container">
-            <div class="features-title">
-                Build applications without hassle
-            </div>
+            <h1>Build applications without hassle</h1>
             <div class="features-items">
                 <div class="feature-box">
                     <img src={foil} alt="Banner" class="banner-img">
