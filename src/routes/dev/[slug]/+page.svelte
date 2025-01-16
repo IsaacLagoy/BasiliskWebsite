@@ -34,6 +34,22 @@
         width: 100%;
         overflow: hidden;
         padding: 1vw;
+        padding-bottom: 200px;
+    }
+
+    :global(table) {
+        font-size: 16px;
+        width: 100%;
+        height: 10vh;
+    }
+
+    :global(tr) {
+        height: 45px;
+    }
+
+    :global(td, th) {
+        margin: 100px;
+        border: 1px solid #333333;
     }
 
     :global(img) {

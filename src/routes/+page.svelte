@@ -1,21 +1,7 @@
 <script lang='ts'>
-    import {
-        Row,
-        Column,
-        Button
-    } from 'carbon-components-svelte';
-
-    import {
-        Document
-    } from 'carbon-icons-svelte';
-
-    import spring_2024 from '$lib/images/tagd_spring_2024.png';
-    import fall_2024 from '$lib/images/tagd_fall_2024.png';
     import banner from '$lib/images/banner.png';
     import codeSample from '$lib/images/code-sample.png';
     import foil from '$lib/images/foil.png';
-    import basilisk_engine_white from '$lib/images/basilisk_engine_white.svg';
-    import basilisk_white from '$lib/images/basilisk_white.svg'
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">

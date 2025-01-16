@@ -1,6 +1,10 @@
+import broad_bvh from '$lib/images/devlogs/broad_bvh/bvh.png';
+import narrow_bvh from '$lib/images/devlogs/narrow_bvh/L2.png';
+import cuboids from '$lib/images/devlogs/cuboids/cuboids.png';
+
 export async function load() {
 
-    const logs: {
+    const logsOld: {
         title: string,
         description: string, 
         contributor: string, 
@@ -28,6 +32,37 @@ export async function load() {
             date: '12/11/2024',
             href: 'narrowBVH'
         },
+    ]
+
+    const logs: {
+        title: string,
+        description: string,
+        date: string,
+        thumbnail: string,
+        href: string
+    }[] = [
+        {
+            title: 'Cuboid Algorithms',
+            description: 'Adressed slowdowns for cuboids',
+            date: '12/29/2024',
+            thumbnail: cuboids,
+            href: 'cuboids'
+        },
+        {
+            title: 'Broad BVH',
+            description: 'Changed generation algorithms for faster build times',
+            date: '12/20/2024',
+            thumbnail: broad_bvh,
+            href: 'broadBVH'
+        },
+        {
+            title: 'Narrow BVH',
+            description: 'Improved mesh point and triangle accessing times',
+            date: '12/11/2024',
+            thumbnail: narrow_bvh,
+            href: 'narrowBVH'
+        },
+
     ]
 
     return {

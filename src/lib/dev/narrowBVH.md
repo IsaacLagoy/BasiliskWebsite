@@ -18,8 +18,8 @@ The narrow BVH uses a binary tree to recursively divide the mesh's triangles int
 
 | Access   | Speed Increase Cube | Speed Increase Monkey |
 | :------- | :-----------------: | :-------------------: |
-| Vertex   | -30%                | 1090%                 |
-| Triangle | -22%                | 1930%                 |
+| Vertex   | 69%                 | 1190%                 |
+| Triangle | 78%                 | 2030%                 |
 
 &nbsp;
 

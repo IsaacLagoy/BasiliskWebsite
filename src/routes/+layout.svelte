@@ -11,11 +11,11 @@
 <div class='top-nav'>
     <div class='top-nav-ui'>
         <div class='left'>
-            <div class='basilisk-container'>
-                <a href='/'>
+            <a href='/'>
+                <div class='basilisk-container'>
                     <img src={basilisk} alt='Basilisk Engine Logo' class='basilisk-logo'/>
-                </a>
-            </div>
+                </div>
+            </a>
             <a href='/'>
                 <div class='nav-box'>
                     <p>Features</p>
@@ -32,11 +32,24 @@
                 </div>
             </a> -->
         </div>
-        <a href='/docs'>
-            <div class='nav-box docs'>
-                <p>Docs</p>
-            </div>
-        </a>
+        
+        <div class='right'>
+            <a href='https://github.com/Loffelt/BasiliskEngine'>
+                <div class='nav-box'>
+                    <p><LogoGithub class='icon'/></p>
+                </div>
+            </a>
+            <a href='https://www.youtube.com/channel/UCtcDYCH8pqNxGUZx_zMAYSA'>
+                <div class='nav-box'>
+                    <p><LogoYoutube class='icon'/></p>
+                </div>
+            </a>
+            <a href='/docs'>
+                <div class='nav-box'>
+                    <p>Docs</p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -45,8 +58,8 @@
 <style>
     .top-nav {
         background-color: rgba(134,144,154,0.15);
-        -webkit-backdrop-filter: blur(3px);
-        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
         position: fixed;
         left: 0;
         top: 0;
@@ -92,8 +105,9 @@
         display: flex;
     }
 
-    .docs {
+    .right {
         justify-self: right;
+        display: flex;
     }
 
     .basilisk-logo {
@@ -103,8 +117,11 @@
     }
 
     .basilisk-container {
-        height: 100%;
+        display: table;
         justify-content: center;
+        aspect-ratio: 1;
+        height: 100%;
+        width: 100%;
     }
 
     .basilisk-container:hover {

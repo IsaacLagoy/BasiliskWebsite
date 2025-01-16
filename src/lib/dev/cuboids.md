@@ -2,6 +2,10 @@
 
 &nbsp;
 
+<img src='../src/lib/images/devlogs/cuboids/cuboids.png' alt='cuboids' width=400 style='margin:auto;'>
+
+&nbsp;
+
 In previous dev log I have mentioned that there have been performance slowdowns for cuboid meshes. Since we expect cuboids to be the most common collision mesh used in Basilisk Engine, I have implemented a separate pipeline for cuboid collisions. 
 
 &nbsp;

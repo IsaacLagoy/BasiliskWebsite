@@ -36,7 +36,7 @@
     <div>
         {#if $isOpen}
         {#each links as link}
-            <a href={link.href} style='text-decoration: none;'>
+            <a href={link.href} style='text-decoration: none;' data-sveltekit-reload>
                 <div class='menu-item'>
                     <p class='item-title'>{link.title}</p>
                 </div>

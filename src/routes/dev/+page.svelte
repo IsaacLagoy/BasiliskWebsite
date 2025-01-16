@@ -16,7 +16,7 @@
             <Column sm={3} md={4} lg={5} >
                 <a href={`/dev/${log.href}`}>
                     <div class='tile'>
-                        <img src={foil} alt={log.title} class='thumbnail'>
+                        <img src={log.thumbnail} alt={log.title} class='thumbnail'>
                         <div class='text'>
                             <p class='title'>{log.title}</p>
                             <p class='date'>1/14/25</p>
