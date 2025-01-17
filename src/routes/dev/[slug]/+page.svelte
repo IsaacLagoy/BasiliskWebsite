@@ -13,7 +13,6 @@
             markdownContent = marked(markdownModule.default);
         } catch (error) {
             console.error('Error loading Markdown file:', error);
-            markdownContent = 'Error: File not found.';
         }
     });
 </script>
@@ -56,5 +55,9 @@
         max-width: 100%;
         height: auto;
         display: block;
+    }
+
+    :global(p) {
+        font-size: 200px;
     }
 </style>

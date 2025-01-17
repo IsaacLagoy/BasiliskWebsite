@@ -1,26 +1,18 @@
-<script lang='ts'>
-    import { marked } from 'marked';
-    import { onMount } from 'svelte';
-    import { page } from '$app/stores';
 
-    let markdownContent: string | Promise<string>;
+<head>
+    <meta charset="utf-8"/>
+    <title>Marked in the browser</title>
+</head>
 
-    onMount(async () => {
-        const slug = $page.params.slug;
-
-        try {
-            const markdownModule = await import(`$lib/docs/${slug}.md?raw`);
-            markdownContent = marked(markdownModule.default);
-        } catch (error) {
-            console.error('Error loading Markdown file:', error);
-            markdownContent = 'Error: File not found.';
-        }
-    });
-</script>
-
-<div class='markdown-container'>
-    {@html markdownContent}
-</div>
+<body>
+    <div id="content"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        
+        const markdownModule = await import(`$lib/docs/${slug}.md?raw`);
+        document.getElementById('content').innerHTML = marked.parse("# Hello");
+    </script>
+</body>
 
 <style>
     .markdown-container {
