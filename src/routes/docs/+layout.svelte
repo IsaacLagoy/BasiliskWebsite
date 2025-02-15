@@ -10,6 +10,7 @@
                 {title: 'Installings Basilisk', href: '/docs/installing'},
                 {title: 'Making Your First Scene', href: '/docs/firstScene'}
             ]}
+            startsOpen = {true}
         />
     </div>
     <div class='doc-page'>

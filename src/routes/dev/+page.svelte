@@ -19,7 +19,7 @@
                         <img src={log.thumbnail} alt={log.title} class='thumbnail'>
                         <div class='text'>
                             <p class='title'>{log.title}</p>
-                            <p class='date'>1/14/25</p>
+                            <p class='date'>{log.date}</p>
                             <p class='description'>{log.description}</p>
                         </div>
                     </div>
@@ -41,7 +41,6 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     .tile {

@@ -8,8 +8,9 @@
 
     export let title: string
     export let links: {title: string, href: string}[]
+    export let startsOpen: boolean
 
-    const isOpen = writable(false);
+    const isOpen = writable(startsOpen);
     const buttonClass = derived(
         isOpen, $isOpen => ($isOpen ? 'purple-background' : '')
     )
@@ -36,7 +37,7 @@
     <div>
         {#if $isOpen}
         {#each links as link}
-            <a href={link.href} style='text-decoration: none;' data-sveltekit-reload>
+            <a href={link.href} style='text-decoration: none;' > <!--data-sveltekit-reload-->
                 <div class='menu-item'>
                     <p class='item-title'>{link.title}</p>
                 </div>

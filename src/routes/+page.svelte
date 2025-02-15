@@ -2,10 +2,14 @@
     import banner from '$lib/images/banner.png';
     import codeSample from '$lib/images/code-sample.png';
     import foil from '$lib/images/foil.png';
+    import FeatureTile from '$lib/FeatureTile.svelte';
+    import {
+        Row
+    } from 'carbon-components-svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 <div class="banner">
@@ -22,7 +26,7 @@
 
 <div class="body-container">
     <div class="body">
-        <div class="features-container">
+        <!-- <div class="features-container">
             <h1>Build applications without hassle</h1>
             <div class="features-items">
                 <div class="feature-box">
@@ -37,6 +41,15 @@
                     <img src={codeSample} alt="Banner" class="banner-img">
                     <p>Quick to start</p>
                 </div>
+            </div>
+        </div> -->
+
+        <div class="features-container">
+            <h1>Build applications without hassle</h1>
+            <div class="features-items">
+                <FeatureTile title="Physically Based Rendering" image={foil} alt="Banner"/>
+                <FeatureTile title="Built-In Physics" image={banner} alt="Banner"/>
+                <FeatureTile title="Quick to Start" image={codeSample} alt="Banner"/>
             </div>
         </div>
 

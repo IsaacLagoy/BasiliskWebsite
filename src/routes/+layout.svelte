@@ -36,15 +36,15 @@
         <div class='right'>
             <a href='https://github.com/Loffelt/BasiliskEngine'>
                 <div class='nav-box'>
-                    <p><LogoGithub class='icon'/></p>
+                    <p><LogoGithub class='icon' size={24}/></p>
                 </div>
             </a>
             <a href='https://www.youtube.com/channel/UCtcDYCH8pqNxGUZx_zMAYSA'>
                 <div class='nav-box'>
-                    <p><LogoYoutube class='icon'/></p>
+                    <p><LogoYoutube class='icon' size={24}/></p>
                 </div>
             </a>
-            <a href='/docs'>
+            <a href='/docs/installing'>
                 <div class='nav-box'>
                     <p>Docs</p>
                 </div>
