@@ -1,16 +1,30 @@
 <script lang="ts">
     import { marked } from 'marked';
     import { page } from '$app/stores';
+    import { onMount } from 'svelte';
 
     let markdownContent: string | Promise<string> = 'Loading...';
+    let isMounted = false;
 
-    // update the markdown when the slug changes
-    $: {
+    // Fetch markdown when the page first loads
+    onMount(() => {
+        isMounted = true;
         loadMarkdown($page.params.slug);
+    });
+
+    // Reactive statement to re-fetch markdown when slug changes
+    $: {
+        if (isMounted && $page.params.slug) {
+            loadMarkdown($page.params.slug);
+        }
     }
 
     async function loadMarkdown(slug: string) {
-        // attempt to load markdown file
+        if (!slug) {
+            markdownContent = 'Error: No document specified.';
+            return;
+        }
+
         try {
             const response = await fetch(`/dev/${slug}.md`);
             if (!response.ok) throw new Error('File not found');
