@@ -4,8 +4,15 @@
     import foil from '$lib/images/foil.png';
     import FeatureTile from '$lib/FeatureTile.svelte';
     import {
-        Row
+        CodeSnippet
     } from 'carbon-components-svelte';
+    import { 
+        Copy
+    } from 'carbon-icons-svelte';
+
+    function copyToClipboard(){
+        navigator.clipboard.writeText("pip install basilisk-engine");
+    }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +25,9 @@
         <h1 class="banner-title">
             3D Made Easy
         </h1>
-        <div class="pip-snippet">
-            <p class="pip-snippet-text"><span style="color: #7E52A0">pip</span> install <span style="color: #D295BF">basilisk-engine</span></p>
-        </div>
+        <button onclick={copyToClipboard} class="pip-snippet">
+            <p class="pip-snippet-text"><span style="color: #7E52A0">pip</span> <span style="color: #EDEDED">install</span> <span style="color: #D295BF">basilisk-engine</span> <Copy style="color: #EDEDED" size={24}/></p>
+        </button>
     </div>
 </div>
 
