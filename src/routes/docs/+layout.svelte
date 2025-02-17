@@ -38,7 +38,7 @@
 
     .page-center {
         position: relative;
-        width: 70%;
+        width: 85%;
         display: flex;
     }
 </style>

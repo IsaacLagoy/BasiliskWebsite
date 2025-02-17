@@ -3,6 +3,10 @@
     import { page } from '$app/stores';
     import { onMount } from 'svelte';
 
+    // code highlighting
+    // import Prism from "prismjs";
+    // import "prismjs/themes/prism-tomorrow.css";
+
     let markdownContent: string | Promise<string> = 'Loading...';
     let isMounted = false;
 
@@ -53,5 +57,21 @@
         max-width: 100%;
         height: auto;
         display: block;
+    }
+
+    :global(h1) {
+        font-weight: 900;
+    }
+
+    :global(pre) {
+        color: red;
+        
+        background-color: yellow;
+        border: 10px solid yellow;
+        border-radius: 10px;
+    }
+
+    :global(code) {
+        padding: 30px;
     }
 </style>
