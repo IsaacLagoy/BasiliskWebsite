@@ -1,18 +1,11 @@
 # Installing Basilisk Engine
 
+If you've done this kind of thing before, you can install Basilisk Engine with
+
+```bash
 pip install basilisk-engine
+```
 
 # Requirements
 
-<div class='code-snippet'>
-    hello
-</div>
-
 1. Python 3.9+
-2. pip
-
-
-
-<style>
-
-</style>

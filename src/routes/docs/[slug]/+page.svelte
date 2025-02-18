@@ -61,17 +61,19 @@
 
     :global(h1) {
         font-weight: 900;
+        margin-bottom: 10px;
     }
 
     :global(pre) {
-        color: red;
-        
-        background-color: yellow;
-        border: 10px solid yellow;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 10px;
+        background-color: var(--dark-purple);
+        border: 10px solid var(--medium-purple);
         border-radius: 10px;
     }
 
-    :global(code) {
-        padding: 30px;
+    :global(.keyword) {
+        color: var(--pink);
     }
 </style>

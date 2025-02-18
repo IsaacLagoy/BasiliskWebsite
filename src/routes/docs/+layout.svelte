@@ -12,6 +12,14 @@
             ]}
             startsOpen = {true}
         />
+        <SideBarMenu
+            title = 'Collecting Information'
+            links = {[
+                {title: 'Collisions', href: '/docs/installing'},
+                {title: 'Raycasting', href: '/docs/installing'}
+            ]}
+            startsOpen = {false}
+        />
     </div>
     <div class='doc-page'>
         <slot />
@@ -20,7 +28,7 @@
 
 <style>
     .side-bar {
-        background-color: var(--medium-blue);
+        background-color: #353535;
         height: 100vh;
         width: 25%;
         display: flex;
@@ -30,8 +38,9 @@
     }
     
     .doc-page {
+        padding: 20px;
         padding-top: 50px;
-        background-color: var(--dark-blue);
+        background-color: var(--medium-grey);
         min-height: 100vh;
         width: 75%;
     }

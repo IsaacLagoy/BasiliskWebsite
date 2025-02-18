@@ -56,7 +56,7 @@
     }
 
     button:hover, .menu-item:hover {
-        background-color: rgba(60, 79, 84, 0.3);
+        background-color: rgba(80, 80, 80, 0.3);
     }
 
     .menu {
